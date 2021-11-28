@@ -1,0 +1,146 @@
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow: overlay;
+}
+body>* {
+    overflow-x: hidden;
+}
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.no-point {
+    cursor: default;
+}
+
+.relative {
+    position: relative;
+}
+
+.hidden-long-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+/*Js Open*/
+.open-block {
+    display: block;
+}
+
+.open-flex {
+    display: flex;
+}
+
+/*Hover*/
+.hover-blur:hover {
+    opacity: 0.6;
+}
+
+.hover-white-items:hover {
+    background-color: #fafafa;
+}
+
+/*Animation*/
+@keyframes  fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes  fadeout{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes growup {
+    from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
+
+/*Modal*/
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    animation: fadein linear .2s;
+    z-index: 999;
+    -webkit-animation: fadein linear .2s;
+}
+/*PC low*/
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .hidden-on-PC-low {
+        display: none;
+    }
+}
+
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+    .hidden-on-tablet-mobile {
+        display: none !important;
+    }
+}
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1024px) {
+    .hidden-on-tablet {
+        display: none;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .hidden-on-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,139 @@
+/*Tablet + Mobile*/
+@media (max-width: 1023px) {
+    nav>ul {
+        display: none;
+    }
+    .mobile-nav__btn {
+        display: block;
+        cursor: pointer;
+    }
+    .alert {
+        flex-direction: column;
+        text-align: center;
+    }
+    .alert button {
+        margin: auto;
+    }
+    main footer .social-links {
+        text-align: left;
+    }
+    main footer .social-links .link-icon {
+        display: block;
+    }
+    main footer .social-links .link-icon a {
+        margin-right: 16px;
+    }
+    body>footer>ul,
+    body>footer>p {
+        margin-left: 0;
+    }
+}
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+/*Mobile*/
+@media (max-width: 739px) {
+    :root {
+        --gutter: 12px;
+        --margin: 28px;
+    }
+    .user__nav,
+    .help__nav {
+        flex-direction: column;
+        left: 15%;
+        right: 15%;
+        width: unset;
+    }
+    .user__nav a,
+    .help__nav .link-wrap a {
+        flex-direction: row;
+        width: 100%;
+        margin: 8px 0;
+    }
+    .user__nav a span,
+    .help__nav a span {
+        flex: 1;
+        text-align: left;
+        margin-left: 12px;
+    }
+    .help__nav .link-wrap {
+        flex-direction: column;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .nav__logo img {
+        height: calc(var(--nav-height) - 32px);
+    }
+    .mobile-nav__btn>span {
+        display: none;
+    }
+    .mobile-nav {
+        transform: translateY(-100%);
+    }
+    .all-games, 
+    .mobile-nav {
+        width: 100vw;
+        padding: 8px 6%;
+    }
+    .banner {
+        height: fit-content;
+    }
+    .banner>img {
+        width: unset;
+        height: 100vw;
+        margin-right: -53%;
+        float: right;
+    }
+    .banner>.container {
+        position: relative;
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        padding: 24px 0;
+        left:0;
+    }
+    .banner>.container h3 {
+        font-size: 3rem;
+    }
+    .banner>.container p {
+        font-size: 2rem;
+    }
+    .banner>.container a {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .box-games .pane img,
+    .box-games .pane p {
+        display: none;
+    }
+    .box-games .pane .desc {
+        text-align: center;
+        height: fit-content;
+    }
+    .box-games .pane .desc span {
+        display: block;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .box-games button {
+        width: 100%;
+    }
+    .alert {
+        padding-left: var(--margin);
+        padding-right: var(--margin);
+    }
+    .alert button {
+        width: calc(100% - var(--margin) * 2);
+    }
+    main>footer ul {
+        border-bottom: 1px solid #969696;
+        padding: 0;
+    }
+    footer>ul {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
